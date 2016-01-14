@@ -1,2 +1,0 @@
-Comverse
-By Gil Henkin
