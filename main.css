@@ -1,0 +1,289 @@
+html{
+  /*background-image:url("src/dogeBackground.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;*/
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+.clearFix::after {
+  content: '';
+  visibility: hidden;
+  display: block;
+  clear:both;
+}
+/*====================================navbar==================================*/
+.navbarBackgroundImage{
+  border: purple solid 7px;
+  width: 100%;
+}
+.navbar{
+  border: purple dashed 7px;
+  width: 940px;
+  margin: auto;
+  position: relative;
+}
+.loginList{
+  margin: 0px;
+  text-align:right;
+  text-decoration: none;
+  list-style-type: none;
+}
+.loginList>li{
+  display: inline;
+}
+.comverseLogo{
+  width: 200px;
+  height: 50px;
+  float:left;
+  background-color: yellow;
+}
+.navList{
+  text-decoration: none;
+  list-style-type: none;
+  text-align: center;
+}
+.navList>li{
+  display:inline;
+  margin: 0.5rem;
+}
+.search{
+  float:right;
+  width: 150px;
+  height: 30px;
+  background-color: red;
+  position: absolute;
+  bottom: 0.5rem;
+  right: 0.5rem;
+}
+/*====================================navbar==================================*/
+/*==============================upperBackround================================*/
+.upperBackgroundImage{
+  border: black solid 7px;
+  width: 100%;
+}
+.upperBackground{
+  border: black dashed 7px;
+  width: 940px;
+  margin: auto;
+  position: relative;
+}
+.learnMoreButton{
+  width: 150px;
+  height: 30px;
+  background-color: red;
+}
+.slide{
+  display:inline;
+  margin: 0.25rem;
+  text-decoration: overline;
+}
+/*comverse Benefits*/
+.comverseBenefits{
+  width: 100%;
+  text-align: justify;
+  display: flex;
+  justify-content: space-between;
+}
+.comverseBenefits div{
+  width: 30%;
+}
+
+.clearFloat{
+  clear: both;
+}
+/*==============================upperBackround================================*/
+/*==================================solutions=================================*/
+.solutionsBackground{
+  border: purple solid 7px;
+  width: 100%;
+}
+.solutions{
+  border: purple dashed 7px;
+  width: 940px;
+  margin: auto;
+}
+
+.solutionsTitle{
+  text-align: center;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  font-size:2rem;
+}
+
+.imagesContainer{
+  text-decoration: none;
+  list-style-type: none;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 0;
+}
+
+.imagesContainer li{
+  text-align: center;
+  width: calc((100%/6));
+}
+.solutions img{
+  width: 100px;
+  height: 100px;
+  margin: auto;
+}
+.solutionText{
+  text-align: center;
+}
+.solutionImage{
+  margin: auto;
+}
+.allSolutionsButton{
+  margin: auto;
+  width: 10rem;
+  display: block;
+}
+.allSolutionsButtonArrow{
+  float: right;
+}
+.seeSolutionsText{
+  border: solid black 0.125rem;
+  text-align: left;
+}
+/*==================================solutions=================================*/
+/*================================lowerBackround==============================*/
+.lowerBackgroundImage{
+  border: black solid 7px;
+  width: 100%;
+}
+.lowerBackround{
+  border: black dashed 7px;
+  width: 940px;
+  margin: auto;
+}
+.newsTitle{
+  text-align: center;
+}
+.newsContainer ul{
+  justify-content: space-between;
+  display: flex;
+  width: 100%;
+  padding: 0;
+  list-style-type: none;
+}
+.news{
+  width: 30%;
+}
+.newsContent{
+  padding: 5%;
+  border: solid black 0.125rem;
+}
+.newsText{
+  float: left;
+  width: 70%;
+  margin: 0;
+  margin-left: 5%;
+}
+.date{
+  float:left;
+  width: 20%;
+  border: solid black 0.0625rem;
+}
+.day{
+  border-bottom: dotted black 0.0625rem;
+  text-align: center;
+}
+.month{
+  text-align: center;
+}
+/*================================lowerBackround==============================*/
+/*================================successStories==============================*/
+.successStoriesBackground{
+  border: purple solid 7px;
+  width: 100%;
+}
+.successStories{
+  border: purple dashed 7px;
+  width: 940px;
+  margin: auto;
+}
+.successStoriesTitle{
+  text-align: center;
+}
+.successStoriesContainer{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.storyInfo{
+  border: solid black 0.0625rem;
+}
+.successStory1{
+  width: 35%;
+}
+.successStory1 .successPhoto{
+  background-image: url("src/CB-JP-face.png");
+  height: 100px;
+  width: 100px;
+  background-repeat: no-repeat;
+  float: left;
+}
+.successText{
+
+}
+.successLine{
+  background-color: #EFEFEF;
+  margin: auto;
+  width: 95%;
+  height: 0.0625rem;
+}
+.successName{
+  float: left;
+}
+.moreInfo{
+  float: left;
+}
+.successStory1 .successLogo{
+  float: right;
+  background-image: url("src/cable_wireless_w100px_X_h42px2.jpg");
+  width: 100px;
+  height: 42px;
+}
+.storysLogos{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.storysLogos div{
+  border: solid black 0.0625rem;
+}
+.storysLogo1{
+  width: 108px;
+  height: 95px;
+  background-image: url("src/mts_w108px_X_h95px.jpg");
+}
+.storysLogo2{
+  width: 30%;
+  background-image: url("src/Tata_Sky_w108px_X_h95px.jpg");
+}
+.storysLogo3{
+  width: 30%;
+  background-image: url("src/upc_w108px_X_h95px.jpg");
+}
+.successStory2{
+  width: 35%;
+}
+.successStory3{
+  width: 28%;
+}
+/*================================successStories==============================*/
+/*====================================footer==================================*/
+.footerBackground{
+  border: black solid 7px;
+  width: 100%;
+}
+.footer{
+  border: black dashed 7px;
+  width: 940px;
+  margin: auto;
+}
+/*====================================footer==================================*/
