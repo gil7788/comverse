@@ -14,6 +14,18 @@ body {
   display: block;
   clear:both;
 }
+.clearFixLeft{
+  content: '';
+  visibility: hidden;
+  display: block;
+  clear:left;
+}
+.clearFixRight{
+  content: '';
+  visibility: hidden;
+  display: block;
+  clear:right;
+}
 /*====================================navbar==================================*/
 .navbarBackgroundImage{
   border: purple solid 7px;
@@ -213,19 +225,26 @@ body {
   width: 100%;
   display: flex;
   justify-content: space-between;
+  border: solid grey 0.125rem;
 }
 .storyInfo{
   border: solid black 0.0625rem;
 }
-.successStory1{
-  width: 35%;
+.successStory1 .storyInfo{
+  padding-bottom: calc(0.0625rem*4);
 }
-.successStory1 .successPhoto{
-  background-image: url("src/CB-JP-face.png");
+.successStory1{
+  width: 38%;
+}
+.successPhoto{
   height: 100px;
   width: 100px;
   background-repeat: no-repeat;
+  background-position: center;
   float: left;
+}
+.successStory1 .successPhoto{
+  background-image: url("src/CB-JP-face.png");
 }
 .successText{
 
@@ -238,15 +257,21 @@ body {
 }
 .successName{
   float: left;
+  margin: 0;
 }
 .moreInfo{
   float: left;
+  margin: 0;
 }
-.successStory1 .successLogo{
+.successLogo{
   float: right;
-  background-image: url("src/cable_wireless_w100px_X_h42px2.jpg");
   width: 100px;
   height: 42px;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.successStory1 .successLogo{
+  background-image: url("src/cable_wireless_w100px_X_h42px2.jpg");
 }
 .storysLogos{
   width: 100%;
@@ -256,25 +281,72 @@ body {
 .storysLogos div{
   border: solid black 0.0625rem;
 }
-.storysLogo1{
-  width: 108px;
+
+.successStory1 .storysLogos>div{
+  width: 31%;
   height: 95px;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-top: 0.6rem;
+}
+.successStory1 .storysLogo1{
   background-image: url("src/mts_w108px_X_h95px.jpg");
 }
-.storysLogo2{
-  width: 30%;
+.successStory1 .storysLogo2{
   background-image: url("src/Tata_Sky_w108px_X_h95px.jpg");
 }
-.storysLogo3{
-  width: 30%;
+.successStory1 .storysLogo3{
   background-image: url("src/upc_w108px_X_h95px.jpg");
 }
+.successStory2 .successLogo{
+  background-image: url("src/Jersey_Telecom_w100px_X_h42px.jpg");
+}
+
 .successStory2{
-  width: 35%;
+  width: 38%;
+}
+.successStory2 .storysLogos>div{
+  width: 31%;
+  height: 95px;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-bottom: 0.6rem;
+}
+.successStory2 .storysLogo1{
+  background-image: url("src/MAX_telecom_w108px_X_h95.jpg");
+}
+.successStory2 .storysLogo2{
+  background-image: url("src/Kyivstarw_w108px_X_h95.jpg");
+}
+.successStory2 .storysLogo3{
+  background-image: url("src/VIDEOCON_w108px_X_h95px.jpg");
+}
+.successStory2 .successPhoto{
+  background-image: url("src/JT-GM-face.png");
 }
 .successStory3{
-  width: 28%;
+  width: 22%;
 }
+.successStory3 .successLogo{
+  background-image: url("src/multilinks.jpg");
+}
+.successStory3 .moreInfo{
+  float: none;
+}
+.successStory3 .storysLogos>div{
+  width: 46.5%;
+  height: 95px;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-top: 0.6rem;
+}
+.successStory3 .storysLogo1{
+  background-image: url("src/3mob_w108px_X_h95px.jpg");
+}
+.successStory3 .storysLogo2{
+  background-image: url("src/play_w108px_X_h95px.jpg");
+}
+
 /*================================successStories==============================*/
 /*====================================footer==================================*/
 .footerBackground{
@@ -285,5 +357,16 @@ body {
   border: black dashed 7px;
   width: 940px;
   margin: auto;
+}
+.footerContainer{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.copyRight{
+  list-style-type: none;
+}
+.copyRight>li{
+  display: inline;
 }
 /*====================================footer==================================*/
