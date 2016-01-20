@@ -6,23 +6,39 @@
   </head>
   <body>
       <div class="navbarBackgroundImage">
-        <div class="navbar">
-          <ul class="loginList">
-            <li>En</li>
-            <li>Customer login</li>
-          </ul>
-          <div class="comverseLogo">
-            <a href="">
-              <img src="" alt="">
-            </a>
+        <div class="navbar clearFix">
+
+          <div class="navContainer">
+            <div class="comverseLogo">
+              <a href="">
+                <img src="src/comverse-logo.png" alt="">
+              </a>
+            </div>
+            <ul class="navList">
+              <li>Your Needs</li>
+              <li>Our Portfolio</li>
+              <li>News&Media</li>
+              <li>About Comverse</li>
+            </ul>
+            <div class="loginList&searchBar">
+              <ul class="loginList">
+                <li class="loginListElement">
+                  <select>
+                   <option>En</option>
+                   <option>Ru</option>
+                   <option>He</option>
+                  </select>
+                </li>
+                <li class="loginListElement">
+                  <a href="">Customer login</a>
+                </li>
+              </ul>
+              <form action="" class="search">
+  					    <input id="search" type="search">
+  			        <input type="submit" value="Search">
+  		        </form>
+            </div>
           </div>
-          <ul class="navList">
-            <li>Your Needs</li>
-            <li>Our Portfolio</li>
-            <li>News&Media</li>
-            <li>About Comverse</li>
-          </ul>
-        <div class="search"></div>
         </div>
       </div>
       <!--End of NavBar -->
@@ -131,7 +147,7 @@
             </ul>
             <div class="clearFloat"></div>
             <div class="allSolutionsButton">
-              <a href="#" class="seeSolutionsText">See all of our solutions</a>
+              <div class="seeSolutionsText">See all of our solutions</div>
               <div class="allSolutionsButtonArrow">
                 <img src="" alt="">
               </div>
@@ -246,10 +262,11 @@
                 <div class="storysLogo1"></div>
                 <div class="storysLogo2"></div>
               </div>
-            <div class="allSuccessStories"></div>
           </div>
         </div>
+        <div class="allSuccessStories">All 256 success Stories</div>
       </div>
+    </div>
       <!--End of successStories -->
       <div class="footerBackground">
         <div class="footer">
@@ -313,6 +330,5 @@
         </div>
       </div>
       <!--End of Footer -->
-    </div>
   </body>
 </html>
