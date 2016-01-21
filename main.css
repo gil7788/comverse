@@ -1,4 +1,5 @@
 html{
+  font-family: 'Open Sans' , sans-serif;
   /*background-image:url("src/dogeBackground.jpg");
   background-repeat: no-repeat;
   background-size: cover;*/
@@ -26,6 +27,28 @@ body {
   display: block;
   clear:right;
 }
+.Button{
+  border-radius: 0.5rem;
+  text-decoration: none;
+  color: white;
+  background-color: rgb(29 , 142, 198);
+  padding:0.45em;
+  padding-left: 0.7em;
+  text-transform: uppercase;
+  display: inline-block;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+.Button::after{
+  content: '';
+  background-image: url('src/btnArrow.png');
+  background-size: 0.8em 0.8em;
+  background-repeat: no-repeat;
+  width: 0.8em;
+  height: 0.8em;
+  margin-left: 2.5em;
+  display: inline-block;
+}
 /*====================================navbar==================================*/
 .navbarBackgroundImage{
   border: purple solid 7px;
@@ -35,24 +58,25 @@ body {
   border: purple dashed 7px;
   width: 940px;
   margin: auto;
-  position: relative;
 }
-.loginList{
-  float: right;
-  margin: 0px;
-  text-align:right;
-  text-decoration: none;
-  list-style-type: none;
+.loginListandsearchBar{
+  width: 17%;
+}
+.navbar li+li::before{
+  background-image: url("src/divider.png");
+  width: 3%;
+  height: 1rem;
 }
 .loginListElement>select{
   border:none;
 }
+
 .loginListElement>a{
-  color: black;
+  color: rgb(84,84,84);
   text-decoration: none;
 }
 .loginList>li{
-  display: inline;
+  display: inline-block;
 }
 .navContainer{
   border: solid grey 0.125rem;
@@ -68,14 +92,42 @@ body {
   list-style-type: none;
   text-align: center;
   margin-bottom: 0;
-  padding-top: 3rem;
+  padding-left: 0;
+  margin-top: 4rem;
 }
-.navList>li{
+.navList li{
   display:inline;
   margin: 0.5rem;
+  text-transform: uppercase;
+  color: rgb(84,84,84);
 }
-form.search{
-  padding-top: 3.75rem;
+.loginList{
+  margin: auto;
+  padding: 0;
+  text-align:center;
+  text-decoration: none;
+  list-style-type: none;
+}
+.search{
+  margin-top: 2.75rem;
+  margin-right: auto;
+  margin-left: auto;
+  border: solid grey 0.0625rem;
+  border-radius: 0.5rem;
+  padding: 0.1rem;
+  width: 80%;
+}
+.searchInput{
+  width: 85%;
+  border: none;
+}
+.searchButton{
+  width: 10%;
+  border: none;
+  background-color: white;
+  background-image: url("src/searchBtn.png");
+  background-repeat: no-repeat;
+  background-position: center;
 }
 /*====================================navbar==================================*/
 /*==============================upperBackround================================*/
@@ -88,10 +140,21 @@ form.search{
   width: 940px;
   margin: auto;
 }
-.learnMoreButton{
-  width: 150px;
-  height: 30px;
-  background-color: red;
+.mainTitle{
+  width: 70%;
+  margin-bottom: 1rem;
+  font-size: 2.5rem;
+}
+.boldMainTitle{
+  font-weight: bold;
+}
+.subTitle{
+  display: block;
+  margin: 0;
+  margin-bottom: 0.5rem;
+}
+.boldSubTitle{
+  font-weight: bold;
 }
 .slide{
   display:inline;
@@ -110,8 +173,22 @@ form.search{
   border: solid black 0.0625rem;
   margin-bottom: 1rem;
   margin-top: 2rem;
-}
 
+  border-radius: 0.5rem;
+  font-size: 1.5rem;
+}
+.comverseBenefitText{
+  text-align: left;
+}
+.comverseBenefit1{
+  background-color: rgba(247,65,159,0.5);
+}
+.comverseBenefit2{
+  background-color: rgba(106,196,61,0.5);
+}
+.comverseBenefit3{
+  background-color: rgba(254,113,15,0.5);
+}
 .clearFloat{
   clear: both;
 }
@@ -131,9 +208,11 @@ form.search{
   text-align: center;
   margin-top: 2rem;
   margin-bottom: 2rem;
-  font-size:2rem;
+  font-size:2.7rem;
 }
-
+.solutionsContainer{
+  text-align: center;
+}
 .imagesContainer{
   text-decoration: none;
   list-style-type: none;
@@ -141,6 +220,7 @@ form.search{
   display: flex;
   justify-content: space-between;
   padding: 0;
+  margin-bottom: 0;
 }
 
 .imagesContainer li{
@@ -158,31 +238,6 @@ form.search{
 .solutionImage{
   margin: auto;
 }
-.allSolutionsButton{
-  margin: auto;
-  margin-top: 2rem;
-  margin-bottom: 2rem;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-  padding-left: 0.5rem;
-  padding-right: 0.5rem;
-  width: 25%;
-  border: solid black 0.125rem;
-  display: block;
-}
-.seeSolutionsText{
-  display: inline-block;
-  float: left;
-  width: 90%;
-  text-align: center;
-}
-.allSolutionsButtonArrow{
-  display: inline-block;
-  height: inherit;
-  width: 10%;
-  background-color: brown;
-  float: left;
-}
 /*==================================solutions=================================*/
 /*================================lowerBackround==============================*/
 .lowerBackgroundImage{
@@ -196,6 +251,8 @@ form.search{
 }
 .newsTitle{
   text-align: center;
+  text-transform: uppercase;
+  font-size: 2.3em;
 }
 .newsContainer ul{
   justify-content: space-between;
@@ -203,6 +260,10 @@ form.search{
   width: 100%;
   padding: 0;
   list-style-type: none;
+}
+.newsSubtitle{
+  text-transform: uppercase;
+  font-size: 1.5em;
 }
 .news{
   width: 30%;
@@ -234,6 +295,8 @@ form.search{
 .successStoriesBackground{
   border: purple solid 7px;
   width: 100%;
+  background-color: rgb(236,236,236);
+  text-align: center;
 }
 .successStories{
   border: purple dashed 7px;
@@ -250,6 +313,9 @@ form.search{
   border: solid grey 0.125rem;
 }
 .storyInfo{
+  height: 12em;
+  box-sizing: border-box;
+  background-color: white;
   border: solid black 0.0625rem;
 }
 .successStory1 .storyInfo{
@@ -368,20 +434,17 @@ form.search{
 .successStory3 .storysLogo2{
   background-image: url("src/play_w108px_X_h95px.jpg");
 }
-.allSuccessStories{
-  width: 20%;
-  border: solid black 0.0625rem;
-  margin: auto;
-  text-align: center;
-  margin-top: 2rem;
-  margin-bottom: 2rem;
-}
-
 /*================================successStories==============================*/
 /*====================================footer==================================*/
+.footerSubtitle{
+  font-size: 1.2em ;
+}
 .footerBackground{
   border: black solid 7px;
   width: 100%;
+  background: linear-gradient(to left,rgb(37,37,37),rgb(45,45,45),rgb(33,33,33));
+  color: white;
+  font-size: 0.85em;
 }
 .footer{
   border: black dashed 7px;
@@ -399,6 +462,10 @@ form.search{
 }
 .copyRight>li{
   display: inline;
+}
+.footerListElement{
+  padding-top: 0.15em;
+  padding-bottom: 0.15em;
 }
 .footerListElements{
   list-style-type: none;
