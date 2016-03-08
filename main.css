@@ -134,6 +134,8 @@ body {
 .upperBackgroundImage{
   border: black solid 7px;
   width: 100%;
+  color: white;
+  background-image: url('src/slide-bg-complexity.jpg');
 }
 .upperBackground{
   border: black dashed 7px;
@@ -156,10 +158,21 @@ body {
 .boldSubTitle{
   font-weight: bold;
 }
-.slide{
-  display:inline;
-  margin: 0.25rem;
-  text-decoration: overline;
+.radio{
+  display: none;
+  }
+.radioStyle{
+  float: left;
+  display:block;
+  margin: 0.2em;
+  width:0.8em;
+  height:0.8em;
+  cursor:pointer;
+  border-radius:25%;
+  background-color:rgb(229 , 229, 299);
+}
+.radio:checked + .radioStyle{
+  background-color:rgb(46 , 149 , 202);
 }
 /*comverse Benefits*/
 .comverseBenefits{
@@ -181,13 +194,25 @@ body {
   text-align: left;
 }
 .comverseBenefit1{
-  background-color: rgba(247,65,159,0.5);
+  background-color: rgba(247,65,159,0.7);
 }
 .comverseBenefit2{
-  background-color: rgba(106,196,61,0.5);
+  background-color: rgba(106,196,61,0.7);
 }
 .comverseBenefit3{
-  background-color: rgba(254,113,15,0.5);
+  background-color: rgba(254,113,15,0.7);
+}
+.comverseBenefit1:hover{
+  background-color: rgba(247,65,159,0.9);
+  cursor: pointer;
+}
+.comverseBenefit2:hover{
+  background-color: rgba(106,196,61,0.9);
+  cursor: pointer;
+}
+.comverseBenefit3:hover{
+  background-color: rgba(254,113,15,0.9);
+  cursor: pointer;
 }
 .clearFloat{
   clear: both;
@@ -195,18 +220,17 @@ body {
 /*==============================upperBackround================================*/
 /*==================================solutions=================================*/
 .solutionsBackground{
-  border: purple solid 7px;
   width: 100%;
+  color: white;
+  background-color: blue;
 }
 .solutions{
-  border: purple dashed 7px;
   width: 940px;
   margin: auto;
 }
-
 .solutionsTitle{
   text-align: center;
-  margin-top: 2rem;
+  margin-top: 0;
   margin-bottom: 2rem;
   font-size:2.7rem;
 }
@@ -222,30 +246,50 @@ body {
   padding: 0;
   margin-bottom: 0;
 }
-
 .imagesContainer li{
   text-align: center;
   width: calc((100%/6));
-}
-.imagesContainer img{
-  width: 100px;
-  height: 100px;
-  margin: auto;
 }
 .solutionText{
   text-align: center;
 }
 .solutionImage{
   margin: auto;
+  height: 4em;
+}
+.imagesContainer>li:hover .solutionImage1{
+  content: url('src/solution_icon_biz-analitics_hover.png');
+}
+.imagesContainer>li:hover .solutionImage2{
+  content: url('src/solution_icon_diti-cx_hover.png');
+}
+.imagesContainer>li:hover .solutionImage3{
+  content: url('src/solution_icon_smart-money_hover.png');
+}
+.imagesContainer>li:hover .solutionImage4{
+  content: url('src/solution_icon_optimize-efficnt_hover.png');
+}
+.imagesContainer>li:hover .solutionImage5{
+  content: url('src/solution_icon_personal_hover.png');
+}
+.imagesContainer>li:hover .solutionImage6{
+  content: url('src/solution_icon_biz-transform_hover.png');
+}
+.allSolutionsButton{
+  text-transform: none;
+  margin: 2em 0 2em 0;
+}
+.allSolutionsButton::after{
+  margin-left: 0.5em;
 }
 /*==================================solutions=================================*/
 /*================================lowerBackround==============================*/
 .lowerBackgroundImage{
-  border: black solid 7px;
+  background-image: url('src/news-and-events-bg.jpg');
+  color: white;
   width: 100%;
 }
 .lowerBackround{
-  border: black dashed 7px;
   width: 940px;
   margin: auto;
 }
@@ -253,6 +297,7 @@ body {
   text-align: center;
   text-transform: uppercase;
   font-size: 2.3em;
+  margin-top: 0;
 }
 .newsContainer ul{
   justify-content: space-between;
@@ -263,32 +308,71 @@ body {
 }
 .newsSubtitle{
   text-transform: uppercase;
-  font-size: 1.5em;
+  font-size: 2em;
+  margin: 1.5em 0 0.5em 0;
+}
+.newsSubtitle3{
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
 }
 .news{
-  width: 30%;
+  width: 31%;
 }
 .newsContent{
+  display: flex;
+  justify-content: space-around;
   padding: 5%;
-  border: solid black 0.125rem;
+  border-radius: 1.5%;
+  background-color: rgba(255, 255, 255, 0.4);
+}
+.newsContent:hover{
+    background-color: rgba(255, 255, 255, 0.6);
 }
 .newsText{
-  float: left;
-  width: 70%;
-  margin: 0;
-  margin-left: 5%;
+  margin: 0 0 0 5%;
+  color: black;
 }
 .date{
-  float:left;
-  width: 20%;
-  border: solid black 0.0625rem;
+  background-color: rgb(50,149,198);
+  border-radius: 2%;
 }
 .day{
-  border-bottom: dotted black 0.0625rem;
+  font-size: 3em;
   text-align: center;
+  border-bottom: dotted white 0.0625rem;
+}
+.day p{
+  margin: 0.3em 0.2em 0.1em 0.2em;
 }
 .month{
   text-align: center;
+  font-size: 1.5em;
+}
+.month p{
+  text-transform: uppercase;
+  margin: 0.2em 0.1em 0.2em 0.1em;
+}
+.showNewsWarper{
+  display: inline-block;
+  margin: 0.75em 0 4em 0;
+}
+.showNewsWarper1:hover .newsIcon{
+  content: url('src/eventListIconNews_hover.png');
+}
+.showNewsWarper2:hover .newsIcon{
+  content: url('src/eventListIconEvents_hover.png');
+}
+.showNewsWarper3:hover .newsIcon{
+  content:url('src/eventListIconPress_hover.png');
+}
+
+.showNewsWarper:hover a{
+  color: black;
+}
+.showNews{
+  text-decoration: none;
+  color: white;
 }
 /*================================lowerBackround==============================*/
 /*================================successStories==============================*/
@@ -313,10 +397,13 @@ body {
   border: solid grey 0.125rem;
 }
 .storyInfo{
-  height: 12em;
+  padding: 5%;
   box-sizing: border-box;
   background-color: white;
   border: solid black 0.0625rem;
+}
+.mainStoryInfo{
+  border-bottom: solid rgb(211,211,211) 0.1em;
 }
 .successStory1 .storyInfo{
   padding-bottom: calc(0.0625rem*4);
@@ -325,17 +412,38 @@ body {
   width: 38%;
 }
 .successPhoto{
-  height: 100px;
-  width: 100px;
+  float: left;
+  display: block;
+  height: 6.3em;
+  width: 6.3em;
   background-repeat: no-repeat;
   background-position: center;
-  float: left;
 }
 .successStory1 .successPhoto{
   background-image: url("src/CB-JP-face.png");
 }
 .successText{
-
+  float: left;
+  display: block;
+  width: 70%;
+  padding: 0 0 1em 0;
+  font-size: 1.4em;
+  text-align: left;
+}
+.successText p{
+  /*margin: 0 0 0 1em;*/
+}
+.successText::after{
+  height: 1em;
+  width: 1em;
+  background-image: url('src/quote-grey.png');
+  background-repeat: no-repeat;
+}
+.successText::before{
+  height: 1em;
+  width: 1em;
+  background-image: url('src/quote-grey.png');
+  background-repeat: no-repeat;
 }
 .successLine{
   background-color: #EFEFEF;
@@ -436,9 +544,6 @@ body {
 }
 /*================================successStories==============================*/
 /*====================================footer==================================*/
-.footerSubtitle{
-  font-size: 1.2em ;
-}
 .footerBackground{
   border: black solid 7px;
   width: 100%;
@@ -451,17 +556,20 @@ body {
   width: 940px;
   margin: auto;
 }
+.footer a{
+  text-decoration: none;
+  color: white;
+}
+.footer a:hover{
+  text-decoration: underline;
+}
 .footerContainer{
   width: 100%;
   display: flex;
   justify-content: space-between;
 }
-.copyRight{
-  list-style-type: none;
-  padding: 0;
-}
-.copyRight>li{
-  display: inline;
+.footerSubtitle{
+  font-size: 1.2em ;
 }
 .footerListElement{
   padding-top: 0.15em;
@@ -477,5 +585,12 @@ body {
 .latestBlog{
   border: solid black 0.0625rem;
   width: 25%;
+}
+.copyRight{
+  list-style-type: none;
+  padding: 0;
+}
+.copyRight>li{
+  display: inline;
 }
 /*====================================footer==================================*/
