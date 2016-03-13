@@ -545,16 +545,15 @@ body {
 /*================================successStories==============================*/
 /*====================================footer==================================*/
 .footerBackground{
-  border: black solid 7px;
   width: 100%;
   background: linear-gradient(to left,rgb(37,37,37),rgb(45,45,45),rgb(33,33,33));
   color: white;
   font-size: 0.85em;
 }
 .footer{
-  border: black dashed 7px;
   width: 940px;
   margin: auto;
+  position: relative;
 }
 .footer a{
   text-decoration: none;
@@ -583,14 +582,90 @@ body {
   width: 25%;
 }
 .latestBlog{
-  border: solid black 0.0625rem;
   width: 25%;
+  padding: 1%;
+  background-color: rgb(63,63,63);
+}
+.blogsMainInfo{
+  border-bottom: solid rgb(100,100,100) 0.1em;
+  padding-bottom: 1em;
+}
+.blogsTitle{
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 1.2em;
+  font-weight: bold;
+  color: rgb(78,167,211);
+}
+.blogDate{
+  float: left;
+  width: 20%;
+}
+.blogDay{
+  font-size: 3em;
+}
+.blogMonth{
+  font-size: 2em;
+}
+.placeHolder{
+  float: left;
+  width: 70%;
+  height: 0.5em;
+}
+.blogText{
+  display: inline-block;
+  float: left;
+  width: 70%;
+  margin: 0 0 0 6%;
+  font-size: 1.3em;
+  font-weight:lighter;
+}
+.blogIcons{
+  display: inline-block;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin: 0 0.5em 0 0;
+  width: 1.5em;
+  height: 1.5em;
+}
+.blogIcons1{
+  background-image: url('src/socialMenuIcon-youtube.png');
+}
+.blogIcons2{
+  background-image: url('src/socialMenuIcon-twitter.png');
+}
+.blogIcons3{
+  background-image: url('src/socialMenuIcon-linkdin.png');
+}
+.signUpContainer{
+    margin: 0 0 3em 0;
+}
+.signUpForm{
+  border-radius: 4%;
+  border:none;
+}
+.signUpText{
+  height: 2em;
+  width: 67%;
+  margin: 0 0 0 2%;
+}
+.signUpButton{
+  height: 2.15em;
+  width: 30%;
+  margin: 0 0 0 -0.5em;
+  background-color:rgb(67,177,232);
+  color: white;
 }
 .copyRight{
+  display: inline-block;
+  position: absolute;
+  left: 0;
+  bottom: 0;
   list-style-type: none;
   padding: 0;
 }
 .copyRight>li{
   display: inline;
+  color: rgb(120,120,120);
 }
 /*====================================footer==================================*/
