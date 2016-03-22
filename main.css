@@ -167,6 +167,7 @@ body {
   height: 1.3em;
   margin: 0;
   border: none;
+  cursor: pointer;
   background-color: white;
   background-repeat: no-repeat;
   background-position: center;
@@ -273,13 +274,17 @@ body {
     margin: 0;
     padding: 0;
     position: absolute;
-    top: 4rem;
+    top: 3.5rem;
     left: 0;
     list-style: none;
     background-color: white;
   }
+  .mobileNavList ul{
+    padding: 0;
+  }
   .mobileNavList li {
     padding: 0.7em 0;
+    list-style: none;
     box-sizing: border-box;
   }
   .mobileNavList li+li {
@@ -290,6 +295,7 @@ body {
   }
   .hamburgerInput:checked ~ .mobileNavList {
     display: block;
+    z-index:1;
   }
   .hamburgerInput:not(checked) ~ .mobileNavList {
     display: none;
@@ -304,6 +310,7 @@ body {
     background-image: url("src/hamburger-icon.png");
   }
   .mobileSearchButton {
+    cursor: pointer;
     background-image: url("src/searchBtnMobile.png");
   }
   #mobileSearchButton {
