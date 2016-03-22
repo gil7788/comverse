@@ -66,6 +66,15 @@ body {
   max-width: 940px;
   margin: auto;
 }
+
+.hiddenText{
+  font-size: 0;
+}
+
+.textHide{
+  text-indent: -9999px;                 /* sends the text off-screen */
+    white-space: nowrap;
+}
 /*====================================navbar==================================*/
 
 .navbarBackgroundImage {

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
   <title>Comverse</title>
@@ -11,66 +11,68 @@
     <div class="centerContainer clearFix">
       <div class="navContainer">
         <!--Hamburger label-->
-        <label for="hamburgerInput" class="hamburgerButton navButton"></label>
+        <label for="hamburgerInput" class="hamburgerButton navButton textHide">hamburger button</label>
         <div class="comverseLogo">
-          <a href="">
-            <img src="src/comverse-logo.png" alt="">
+          <a href="#">
+            <img src="src/comverse-logo.png" alt="comverseLogo">
           </a>
         </div>
         <!--Hamburger checkbox-->
         <nav class="navList">
           <ul>
-            <li><a href="" class="navListElement">Your Needs</a></li>
-            <li><a href="" class="navListElement">Our Portfolio</a></li>
-            <li><a href="" class="navListElement">News&Media</a></li>
-            <li><a href="" class="navListElement">About Comverse</a></li>
+            <li><a href="#" class="navListElement">Your Needs</a></li>
+            <li><a href="#" class="navListElement">Our Portfolio</a></li>
+            <li><a href="#" class="navListElement">News&Media</a></li>
+            <li><a href="#" class="navListElement">About Comverse</a></li>
           </ul>
         </nav>
         <div class="loginListandsearchBar">
           <ul class="loginList">
             <li class="loginListElement">
-              <select>
+              <select id="languageSelection">
                 <option>En</option>
                 <option>Ru</option>
                 <option>He</option>
               </select>
+              <label for="languageSelection" class="hiddenText">language selection</label>
             </li>
             <li class="loginListElement">
-              <a href="">Customer login</a>
+              <a href="#">Customer login</a>
             </li>
           </ul>
           <form action="" class="search clearFix">
             <input id="search" type="search" class="searchInput">
+            <label for="search" class="hiddenText">search form</label>
             <div class="divider"></div>
-            <input type="submit" value="" class="searchButton">
+            <input type="submit" value="search button" class="searchButton textHide">
           </form>
         </div>
         <!--Moblie Search Button-->
-        <label for="mobileSearchButton" class="navButton mobileSearchButton"></label>
+        <label for="mobileSearchButton" class="navButton mobileSearchButton textHide">search</label>
       </div>
       <input type="checkbox" name="hamburgerInput" id="hamburgerInput" class="hamburgerInput">
       <nav class="mobileNavList">
         <ul>
           <li>
-            <a href="" class="navListElement">
+            <a href="#" class="navListElement">
               <div class="arrowImage"></div>
               Your Needs
             </a>
           </li>
           <li>
-            <a href="" class="navListElement">
+            <a href="#" class="navListElement">
               <div class="arrowImage"></div>
               Our Portfolio
             </a>
           </li>
           <li>
-            <a href="" class="navListElement">
+            <a href="#" class="navListElement">
               <div class="arrowImage"></div>
               News & Media
             </a>
           </li>
           <li>
-            <a href="" class="navListElement">
+            <a href="#" class="navListElement">
               <div class="arrowImage"></div>
               About Comverse
             </a>
@@ -80,7 +82,8 @@
       <!--Mobile Search Bar-->
       <form action="">
         <input type="checkbox" name="mobileSearchButton" id="mobileSearchButton" class="mobileSearchInput">
-        <input type="search" class="mobileSearchBar"></input>
+        <input id="mobileSearchBar" type="search" class="mobileSearchBar"></input>
+        <label for="mobileSearchBar" class="hiddenText">mobile search bar</label>
       </form>
     </div>
   </header>
@@ -114,11 +117,11 @@
               </p>
             </div>
           </div>
-          <a href="" class="Button learnMoreButton">Learn More</a>
+          <a href="#" class="Button learnMoreButton">Learn More</a>
           <!--Colorful boxes-->
           <div class="comverseBenefits">
             <!--First Box-->
-            <a href="" class="comverseBenefit comverseBenefit1 noIncreasingPaddedDiv">
+            <a href="#" class="comverseBenefit comverseBenefit1 noIncreasingPaddedDiv">
               <p class="comverseBenefitText">Comverse Is Value-Added Service Global Market Leader.</p>
               <div class="moreInfo">
                 <img src="src/link-icon-image.png" alt="" class="comverseBenefitImg">
@@ -126,7 +129,7 @@
               </div>
             </a>
             <!--Second Box-->
-            <a href="" class="comverseBenefit comverseBenefit2 noIncreasingPaddedDiv">
+            <a href="#" class="comverseBenefit comverseBenefit2 noIncreasingPaddedDiv">
               <p class="comverseBenefitText">Managed Services World Congress September 18-19 Berlin, Germany</p>
               <div class="moreInfo">
                 <img src="src/link-icon-image.png" alt="" class="comverseBenefitImg">
@@ -134,7 +137,7 @@
               </div>
             </a>
             <!--Third Box-->
-            <a href="" class="comverseBenefit comverseBenefit3 noIncreasingPaddedDiv">
+            <a href="#" class="comverseBenefit comverseBenefit3 noIncreasingPaddedDiv">
               <p class="comverseBenefitText">Comverse:Enabling a world of Conected Possibilites</p>
               <div class="moreInfo">
                 <img src="src/link-icon-image.png" alt="" class="comverseBenefitImg">
@@ -159,7 +162,7 @@
         <ul class="imagesContainer clearFix">
           <li>
             <!--First Image-->
-            <a href="">
+            <a href="#">
               <div class="solutionImageContainer">
                 <img src="src/solution_icon_biz-analitics.png" alt="" class="solutionImage solutionImage1">
                 <p class="solutionText">Business Stimulating Analytics</p>
@@ -168,7 +171,7 @@
           </li>
           <li>
             <!--Second Image-->
-            <a href="">
+            <a href="#">
               <div class="solutionImageContainer">
                 <img src="src/solution_icon_diti-cx.png" alt="" class="solutionImage solutionImage2">
                 <p class="solutionText">Digital Customer Experience</p>
@@ -178,7 +181,7 @@
           </li>
           <li>
             <!--Third Image-->
-            <a href="">
+            <a href="#">
               <div class="solutionImageContainer">
                 <img src="src/solution_icon_smart-money.png" alt="" class="solutionImage solutionImage3">
                 <p class="solutionText">Smart Monetization</p>
@@ -189,7 +192,7 @@
           <div class="ImageDivider"></div>
           <li>
             <!--Fourth Image-->
-            <a href="">
+            <a href="#">
               <div class="solutionImageContainer">
                 <img src="src/solution_icon_optimize-efficnt.png" alt="" class="solutionImage solutionImage4">
                 <p class="solutionText">Optimization and Efficiency</p>
@@ -198,7 +201,7 @@
           </li>
           <li>
             <!--Fifth Image-->
-            <a href="">
+            <a href="#">
               <div class="solutionImageContainer">
                 <img src="src/solution_icon_personal.png" alt="" class="solutionImage solutionImage5">
                 <p class="solutionText">Personalized Choice & Control</p>
@@ -208,7 +211,7 @@
           </li>
           <li>
             <!--Sixth Image-->
-            <a href="">
+            <a href="#">
               <div class="solutionImageContainer">
                 <img src="src/solution_icon_biz-transform.png" alt="" class="solutionImage solutionImage6">
                 <p class="solutionText">Business Transformation</p>
@@ -218,7 +221,7 @@
           </li>
         </ul>
         <div class="clearFix"></div>
-        <a href="" class="Button allSolutionsButton">See all of our solutions</a>
+        <a href="#" class="Button allSolutionsButton">See all of our solutions</a>
         <div class="clearFloat"></div>
       </div>
     </div>
@@ -233,7 +236,7 @@
         <li class="news">
           <!--First Event-->
           <p class="newsSubtitle newsSubtitle1">News</p>
-          <a href="" class="eventContainer">
+          <a href="#" class="eventContainer">
             <div class="newsContent">
               <div class="date">
                 <div class="day">
@@ -246,15 +249,16 @@
               <p class="newsText">Comverse Regains Lead in Convergent Charging Market Regains Lead in</p>
             </div>
             <div class="showNewsWarper showNewsWarper1">
-              <a href="" class="showNews">
-                <img src="src/eventListIconNews.png" alt="" class="newsIcon"> All News</a>
+              <a href="#" class="showNews">
+                <img src="src/eventListIconNews.png" alt="event" class="newsIcon"> All News
+              </a>
             </div>
           </a>
         </li>
         <li class="news">
           <!--Second Event-->
           <p class="newsSubtitle newsSubtitle2">Events</p>
-          <a href="" class="eventContainer">
+          <a href="#" class="eventContainer">
             <div class="newsContent">
               <div class="date">
                 <div class="day">
@@ -267,15 +271,16 @@
               <p class="newsText">Comverse Regains Lead in Convergent Charging Market Regains Lead in</p>
             </div>
             <div class="showNewsWarper showNewsWarper2">
-              <a href="" class="showNews">
-                <img src="src/eventListIconEvents.png" alt="" class="newsIcon"> All Events</a>
+              <a href="#" class="showNews">
+                <img src="src/eventListIconEvents.png" alt="event" class="newsIcon"> All Events</a>
             </div>
           </a>
         </li>
         <li class="news">
           <!--Third Event-->
           <p class="newsSubtitle newsSubtitle3">Prease Release</p>
-          <a href="" class="eventContainer">
+          <a href="#" class="eventContainer">
+
             <div class="newsContent">
               <div class="date">
                 <div class="day">
@@ -288,8 +293,8 @@
               <p class="newsText">Comverse Regains Lead in Convergent Charging Market Regains Lead in</p>
             </div>
             <div class="showNewsWarper showNewsWarper3">
-              <a href="" class="showNews">
-                <img src="src/eventListIconPress.png" alt="" class="newsIcon"> All Events</a>
+              <a href="#" class="showNews">
+                <img src="src/eventListIconPress.png" alt="event" class="newsIcon"> All Events</a>
             </div>
           </a>
         </li>
@@ -303,7 +308,8 @@
       <div class="successStoriesContainer">
         <!--First Success Story-->
         <div class="successStory1 successStory">
-          <a href="" class="successStoryBlockContainer">
+          <a href="#" class="successStoryBlockContainer">
+            <p class="hiddenText"> success story link </p>
             <div class="storyInfo clearFix">
               <div class="upper">
                 <div class="mainStoryInfo clearFix">
@@ -326,19 +332,22 @@
 
           <div class="storysLogos">
             <div class="storysLogo storysLogo1">
-              <a href="" class="successStoryBlockContainer">
+              <a href="#" class="successStoryBlockContainer">
+                <p class="hiddenText"> success story link </p>
                 <div class="upper"></div>
                 <div class="hidden"></div>
               </a>
             </div>
             <div class="storysLogo storysLogo2">
-              <a href="" class="successStoryBlockContainer">
+              <a href="#" class="successStoryBlockContainer">
+                <p class="hiddenText"> success story link </p>
                 <div class="upper"></div>
                 <div class="hidden"></div>
               </a>
             </div>
             <div class="storysLogo storysLogo3">
-              <a href="" class="successStoryBlockContainer">
+              <a href="#" class="successStoryBlockContainer">
+                <p class="hiddenText"> success story link </p>
                 <div class="upper"></div>
                 <div class="hidden"></div>
               </a>
@@ -349,25 +358,29 @@
         <div class="successStory2 successStory">
           <div class="storysLogos fullScreenStories">
             <div class="storysLogo storysLogo1">
-              <a href="" class="successStoryBlockContainer">
+              <a href="#" class="successStoryBlockContainer">
+                <p class="hiddenText"> success story link </p>
                 <div class="upper"></div>
                 <div class="hidden"></div>
               </a>
             </div>
             <div class="storysLogo storysLogo2">
-              <a href="" class="successStoryBlockContainer">
+              <a href="#" class="successStoryBlockContainer">
+                <p class="hiddenText"> success story link </p>
                 <div class="upper"></div>
                 <div class="hidden"></div>
               </a>
             </div>
             <div class="storysLogo storysLogo3">
-              <a href="" class="successStoryBlockContainer">
+              <a href="#" class="successStoryBlockContainer">
+                <p class="hiddenText"> success story link </p>
                 <div class="upper"></div>
                 <div class="hidden"></div>
               </a>
             </div>
           </div>
-          <a href="" class="successStoryBlockContainer">
+          <a href="#" class="successStoryBlockContainer">
+            <p class="hiddenText"> success story link </p>
             <div class="storyInfo clearFix">
               <div class="upper">
                 <div class="mainStoryInfo clearFix">
@@ -389,19 +402,22 @@
           </a>
           <div class="storysLogos mobileLogo">
             <div class="storysLogo storysLogo1">
-              <a href="" class="successStoryBlockContainer">
+              <a href="#" class="successStoryBlockContainer">
+                <p class="hiddenText"> success story link </p>
                 <div class="upper"></div>
                 <div class="hidden"></div>
               </a>
             </div>
             <div class="storysLogo storysLogo2">
-              <a href="" class="successStoryBlockContainer">
+              <a href="#" class="successStoryBlockContainer">
+                <p class="hiddenText"> success story link </p>
                 <div class="upper"></div>
                 <div class="hidden"></div>
               </a>
             </div>
             <div class="storysLogo storysLogo3">
-              <a href="" class="successStoryBlockContainer">
+              <a href="#" class="successStoryBlockContainer">
+                <p class="hiddenText"> success story link </p>
                 <div class="upper"></div>
                 <div class="hidden"></div>
               </a>
@@ -410,7 +426,8 @@
         </div>
         <!--Third Success Stroy-->
         <div class="successStory3 successStory">
-          <a href="" class="successStoryBlockContainer">
+          <a href="#" class="successStoryBlockContainer">
+            <p class="hiddenText"> success story link </p>
             <div class="storyInfo clearFix">
               <div class="upper">
                 <div class="mainStoryInfo clearFix">
@@ -431,13 +448,15 @@
           </a>
           <div class="storysLogos">
             <div class="storysLogo storysLogo1">
-              <a href="" class="successStoryBlockContainer">
+              <a href="#" class="successStoryBlockContainer">
+                <p class="hiddenText"> success story link </p>
                 <div class="upper"></div>
                 <div class="hidden"></div>
               </a>
             </div>
             <div class="storysLogo storysLogo2">
-              <a href="" class="successStoryBlockContainer">
+              <a href="#" class="successStoryBlockContainer">
+                <p class="hiddenText"> success story link </p>
                 <div class="upper"></div>
                 <div class="hidden"></div>
               </a>
@@ -445,10 +464,10 @@
           </div>
         </div>
       </div>
-      <a href="" class="allSuccessStories Button">All 256 success Stories</a>
+      <a href="#" class="allSuccessStories Button">All 256 success Stories</a>
       <div class="clearFix"></div>
       <a href="#">
-        <button class="topButton"></button>
+        <button class="topButton hiddenText">top button</button>
       </a>
       <div class="clearFix"></div>
     </div>
@@ -461,39 +480,39 @@
           <!--First Column -->
           <p class="footerSubtitle">Key Solutions</p>
           <ul class="footerListElements">
-            <li class="footerListElement"><a href="">Monetizing</a></li>
-            <li class="footerListElement"><a href="">Over The Top(OTT)</a></li>
-            <li class="footerListElement"><a href="">Machine to Machine (M2M)</a></li>
-            <li class="footerListElement"><a href="">Cloud Computing</a></li>
-            <li class="footerListElement"><a href="">Managed Services</a></li>
-            <li class="footerListElement"><a href="">Customer Experience</a></li>
-            <li class="footerListElement"><a href="">Rich Experience Managment</a></li>
-            <li class="footerListElement"><a href="">Social Media</a></li>
-            <li class="footerListElement"><a href="">4F/LTE</a></li>
+            <li class="footerListElement"><a href="#">Monetizing</a></li>
+            <li class="footerListElement"><a href="#">Over The Top(OTT)</a></li>
+            <li class="footerListElement"><a href="#">Machine to Machine (M2M)</a></li>
+            <li class="footerListElement"><a href="#">Cloud Computing</a></li>
+            <li class="footerListElement"><a href="#">Managed Services</a></li>
+            <li class="footerListElement"><a href="#">Customer Experience</a></li>
+            <li class="footerListElement"><a href="#">Rich Experience Managment</a></li>
+            <li class="footerListElement"><a href="#">Social Media</a></li>
+            <li class="footerListElement"><a href="#">4F/LTE</a></li>
           </ul>
         </div>
         <!--Second Column-->
         <div class="footerList">
           <p class="footerSubtitle">Products & Services</p>
           <ul class="footerListElements">
-            <li class="footerListElement"><a href="">Billing</a></li>
-            <li class="footerListElement"><a href="">Vas</a></li>
-            <li class="footerListElement"><a href="">Mobile Internet</a></li>
-            <li class="footerListElement"><a href="">Global Services</a></li>
-            <li class="footerListElement"><a href="">Training Services</a></li>
+            <li class="footerListElement"><a href="#">Billing</a></li>
+            <li class="footerListElement"><a href="#">Vas</a></li>
+            <li class="footerListElement"><a href="#">Mobile Internet</a></li>
+            <li class="footerListElement"><a href="#">Global Services</a></li>
+            <li class="footerListElement"><a href="#">Training Services</a></li>
           </ul>
         </div>
         <!--Third Column-->
         <div class="footerList">
           <p class="footerSubtitle">Company</p>
           <ul class="footerListElements">
-            <li class="footerListElement"><a href="">executive profiles</a></li>
-            <li class="footerListElement"><a href="">clients</a></li>
-            <li class="footerListElement"><a href="">investors</a></li>
-            <li class="footerListElement"><a href="">partners</a></li>
-            <li class="footerListElement"><a href="">corporate responsibility</a></li>
-            <li class="footerListElement"><a href="">industry involvment</a></li>
-            <li class="footerListElement"><a href="">careers</a></li>
+            <li class="footerListElement"><a href="#">executive profiles</a></li>
+            <li class="footerListElement"><a href="#">clients</a></li>
+            <li class="footerListElement"><a href="#">investors</a></li>
+            <li class="footerListElement"><a href="#">partners</a></li>
+            <li class="footerListElement"><a href="#">corporate responsibility</a></li>
+            <li class="footerListElement"><a href="#">industry involvment</a></li>
+            <li class="footerListElement"><a href="#">careers</a></li>
           </ul>
         </div>
         <!--Fourth Column/Blog-->
@@ -509,12 +528,13 @@
           </div>
           <p class="comverseSubscribtionTitle blogsTitle">Subscribe to Comverse</p>
           <form action="" class="signUpContainer">
-            <input type="text" name="email" value="gil7788@gamil.com" class="signUpText signUpForm">
+            <input id="signUpForm" type="text" name="email" value="gil7788@gamil.com" class="signUpText signUpForm">
+            <label for="signUpForm" class="hiddenText">sign up form</label>
             <input type="submit" value="SIGN UP" class="signUpButton signUpForm">
           </form>
-          <a href="" class="webBlogIcons blogIcons1"></a>
-          <a href="" class="webBlogIcons blogIcons2"></a>
-          <a href="" class="webBlogIcons blogIcons3"></a>
+          <a href="#" class="webBlogIcons blogIcons1 textHide">blog icon</a>
+          <a href="#" class="webBlogIcons blogIcons2 textHide">blog icon</a>
+          <a href="#" class="webBlogIcons blogIcons3 textHide">blog icon</a>
           <!--Mobile Menu-->
           <div class="mobileMenu">
             <a href="#" class="mobileMenuContent">Contact Us</a>
@@ -524,17 +544,18 @@
           </div>
           <div class="mobileMenu">
             <p class="mobileMenuContent">Visit us On:</p>
-            <a href="" class="blogIcons blogIcons1"></a>
-            <a href="" class="blogIcons blogIcons2"></a>
-            <a href="" class="blogIcons blogIcons3"></a>
+            <a href="#" class="blogIcons blogIcons1 textHide">blog icon</a>
+            <a href="#" class="blogIcons blogIcons2 textHide">blog icon</a>
+            <a href="#" class="blogIcons blogIcons3 textHide">blog icon</a>
           </div>
           <div class="mobileMenu">
             <p class="mobileMenuContent">Change Language: </p>
-            <select class="selectionList">
+            <select id="mobileLanguageSelection" class="selectionList">
               <option>English</option>
               <option>Russian</option>
               <option>Hebrew</option>
             </select>
+            <label for="mobileLanguageSelection" class="hiddenText">mobile language selection</label>
           </div>
         </div>
         <div class="copyRightContainter">
@@ -545,4 +566,5 @@
   </footer>
   <!--End of Footer -->
 </body>
+
 </html>
