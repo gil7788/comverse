@@ -1,6 +1,6 @@
 html {
   font-family: 'Open Sans', sans-serif;
-  /*background-image:url("../src/images/dogeBackground.jpg");
+  /*background-image:url("public/src/images/dogeBackground.jpg");
   background-repeat: no-repeat;
   background-size: cover;*/
 }
@@ -52,7 +52,7 @@ body {
 
 .Button::after {
   content: '';
-  background-image: url('../src/images/btnArrow.png');
+  background-image: url('public/src/images/btnArrow.png');
   background-size: 0.8em 0.8em;
   background-repeat: no-repeat;
   width: 0.8em;
@@ -167,7 +167,7 @@ body {
   height: 1.3em;
   background-repeat: no-repeat;
   background-position: top left;
-  background-image: url("../src/images/divider.png");
+  background-image: url("public/src/images/divider.png");
 }
 
 .searchButton {
@@ -180,7 +180,7 @@ body {
   background-color: white;
   background-repeat: no-repeat;
   background-position: center;
-  background-image: url("../src/images/searchBtn.png");
+  background-image: url("public/src/images/searchBtn.png");
 }
 
 .mobileSearchBar {
@@ -205,7 +205,7 @@ body {
 @media screen and (min-width: 601px) {
   .navbarBackgroundImage li+li {
     padding: 0 0.5em;
-    background-image: url("../src/images/divider.png");
+    background-image: url("public/src/images/divider.png");
     background-repeat: no-repeat;
     background-position: top left;
   }
@@ -274,7 +274,7 @@ body {
     display: inline-block;
     width: 1em;
     height: 1em;
-    background-image: url("../src/images/navCollapseArrowRight.png");
+    background-image: url("public/src/images/navCollapseArrowRight.png");
     background-repeat: no-repeat;
     background-position: center;
   }
@@ -310,17 +310,17 @@ body {
     display: none;
   }
   .comverseLogo img {
-    content: url("../src/images/comverse-logo-medium.png");
+    content: url("public/src/images/comverse-logo-medium.png");
   }
   .comverseLogo {
     margin: auto;
   }
   .hamburgerButton {
-    background-image: url("../src/images/hamburger-icon.png");
+    background-image: url("public/src/images/hamburger-icon.png");
   }
   .mobileSearchButton {
     cursor: pointer;
-    background-image: url("../src/images/searchBtnMobile.png");
+    background-image: url("public/src/images/searchBtnMobile.png");
   }
   #mobileSearchButton {
     display: none;
@@ -367,7 +367,7 @@ body {
 }
 
 .upperBackgroundImage {
-  background-image: url('../src/images/slide-bg-complexity.jpg');
+  background-image: url('public/src/images/slide-bg-complexity.jpg');
 }
 
 .radio {
@@ -584,7 +584,7 @@ body {
     height: 1em;
     background-position: center;
     background-repeat: no-repeat;
-    background-image: url("../src/images/promotion-item-arrow.png");
+    background-image: url("public/src/images/promotion-item-arrow.png");
   }
 }
 
@@ -666,27 +666,27 @@ body {
 }
 
 .solutionImage1:hover {
-  content: url('../src/images/solution_icon_biz-analitics_hover.png');
+  content: url('public/src/images/solution_icon_biz-analitics_hover.png');
 }
 
 .solutionImage2:hover {
-  content: url('../src/images/solution_icon_diti-cx_hover.png');
+  content: url('public/src/images/solution_icon_diti-cx_hover.png');
 }
 
 .solutionImage3:hover {
-  content: url('../src/images/solution_icon_smart-money_hover.png');
+  content: url('public/src/images/solution_icon_smart-money_hover.png');
 }
 
 .solutionImage4:hover {
-  content: url('../src/images/solution_icon_optimize-efficnt_hover.png');
+  content: url('public/src/images/solution_icon_optimize-efficnt_hover.png');
 }
 
 .solutionImage5:hover {
-  content: url('../src/images/solution_icon_personal_hover.png');
+  content: url('public/src/images/solution_icon_personal_hover.png');
 }
 
 .solutionImage6:hover {
-  content: url('../src/images/solution_icon_biz-transform_hover.png');
+  content: url('public/src/images/solution_icon_biz-transform_hover.png');
 }
 
 .solutionImage1::before,
@@ -738,7 +738,7 @@ body {
 
 .lowerBackgroundImage {
   color: white;
-  background-image: url('../src/images/news-and-events-bg.jpg');
+  background-image: url('public/src/images/news-and-events-bg.jpg');
 }
 
 .newsTitle {
@@ -833,17 +833,17 @@ body {
 
 .showNewsWarper1 .newsIcon::before,
 .showNewsWarper1:hover .newsIcon {
-  content: url('../src/images/eventListIconNews_hover.png');
+  content: url('public/src/images/eventListIconNews_hover.png');
 }
 
 .showNewsWarper2 .newsIcon::before,
 .showNewsWarper2:hover .newsIcon {
-  content: url('../src/images/eventListIconEvents_hover.png');
+  content: url('public/src/images/eventListIconEvents_hover.png');
 }
 
 .showNewsWarpe3 .newsIcon::before,
 .showNewsWarper3:hover .newsIcon {
-  content: url('../src/images/eventListIconPress_hover.png');
+  content: url('public/src/images/eventListIconPress_hover.png');
 }
 
 .showNewsWarper:hover a {
@@ -960,7 +960,7 @@ body {
 }
 
 .successStory1 .successPhoto {
-  background-image: url("../src/images/CB-JP-face.png");
+  background-image: url("public/src/images/CB-JP-face.png");
 }
 
 .successText {
@@ -983,7 +983,7 @@ body {
   float: left;
   height: 1.3em;
   width: 2em;
-  background-image: url("../src/images/quote-grey.png");
+  background-image: url("public/src/images/quote-grey.png");
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -992,7 +992,7 @@ body {
   float: left;
   height: 1em;
   width: 2em;
-  background-image: url("../src/images/quote-grey.png");
+  background-image: url("public/src/images/quote-grey.png");
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -1021,7 +1021,7 @@ body {
 }
 
 .successStory1 .successLogo {
-  background-image: url("../src/images/cable_wireless_w100px_X_h42px2.jpg");
+  background-image: url("public/src/images/cable_wireless_w100px_X_h42px2.jpg");
 }
 
 .storysLogos {
@@ -1076,23 +1076,23 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  background-image: url("../src/images/logos_generic_2nd_side_cut_02_w108px_x_h95px.jpg");
+  background-image: url("public/src/images/logos_generic_2nd_side_cut_02_w108px_x_h95px.jpg");
 }
 
 .successStory1 .storysLogo1 .upper {
-  background-image: url("../src/images/mts_w108px_X_h95px.jpg");
+  background-image: url("public/src/images/mts_w108px_X_h95px.jpg");
 }
 
 .successStory1 .storysLogo2 .upper {
-  background-image: url("../src/images/Tata_Sky_w108px_X_h95px.jpg");
+  background-image: url("public/src/images/Tata_Sky_w108px_X_h95px.jpg");
 }
 
 .successStory1 .storysLogo3 .upper {
-  background-image: url("../src/images/upc_w108px_X_h95px.jpg");
+  background-image: url("public/src/images/upc_w108px_X_h95px.jpg");
 }
 
 .successStory2 .successLogo {
-  background-image: url("../src/images/Jersey_Telecom_w100px_X_h42px.jpg");
+  background-image: url("public/src/images/Jersey_Telecom_w100px_X_h42px.jpg");
 }
 
 .successStory2 {
@@ -1100,19 +1100,19 @@ body {
 }
 
 .successStory2 .storysLogo1 .upper {
-  background-image: url("../src/images/MAX_telecom_w108px_X_h95.jpg");
+  background-image: url("public/src/images/MAX_telecom_w108px_X_h95.jpg");
 }
 
 .successStory2 .storysLogo2 .upper {
-  background-image: url("../src/images/Kyivstarw_w108px_X_h95.jpg");
+  background-image: url("public/src/images/Kyivstarw_w108px_X_h95.jpg");
 }
 
 .successStory2 .storysLogo3 .upper {
-  background-image: url("../src/images/VIDEOCON_w108px_X_h95px.jpg");
+  background-image: url("public/src/images/VIDEOCON_w108px_X_h95px.jpg");
 }
 
 .successStory2 .successPhoto {
-  background-image: url("../src/images/JT-GM-face.png");
+  background-image: url("public/src/images/JT-GM-face.png");
 }
 
 .successStory3 {
@@ -1120,7 +1120,7 @@ body {
 }
 
 .successStory3 .successLogo {
-  background-image: url("../src/images/multilinks.jpg");
+  background-image: url("public/src/images/multilinks.jpg");
 }
 
 .successStory3 .moreInfo {
@@ -1132,11 +1132,11 @@ body {
 }
 
 .successStory3 .storysLogo1 .upper {
-  background-image: url("../src/images/3mob_w108px_X_h95px.jpg");
+  background-image: url("public/src/images/3mob_w108px_X_h95px.jpg");
 }
 
 .successStory3 .storysLogo2 .upper {
-  background-image: url("../src/images/play_w108px_X_h95px.jpg");
+  background-image: url("public/src/images/play_w108px_X_h95px.jpg");
 }
 
 .allSuccessStories {
@@ -1160,7 +1160,7 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  background-image: url('../src/images/back_top.png');
+  background-image: url('public/src/images/back_top.png');
   border: none;
 }
 
@@ -1323,28 +1323,28 @@ body {
   height: 1.5em;
 }
 .blogIcons1 {
-  background-image: url('../src/images/socialMenuIcon-youtube.png');
+  background-image: url('public/src/images/socialMenuIcon-youtube.png');
 }
 
 .blogIcons2 {
-  background-image: url('../src/images/socialMenuIcon-twitter.png');
+  background-image: url('public/src/images/socialMenuIcon-twitter.png');
 }
 
 .blogIcons3 {
-  background-image: url('../src/images/socialMenuIcon-linkdin.png');
+  background-image: url('public/src/images/socialMenuIcon-linkdin.png');
 }
 
 /* Apply the hover effect for each blog icon */
 .blogIcons1:hover {
-  background-image: url('../src/images/socialMenuIcon-youtube_hover.png');
+  background-image: url('public/src/images/socialMenuIcon-youtube_hover.png');
 }
 
 .blogIcons2:hover {
-  background-image: url('../src/images/socialMenuIcon-twitter_hover.png');
+  background-image: url('public/src/images/socialMenuIcon-twitter_hover.png');
 }
 
 .blogIcons3:hover {
-  background-image: url('../src/images/socialMenuIcon-linkdin_hover.png');
+  background-image: url('public/src/images/socialMenuIcon-linkdin_hover.png');
 }
 
 .signUpContainer {
@@ -1561,7 +1561,7 @@ body {
     margin: 2.5em 0 0 0;
   }
   .comverseLogo img {
-    content: url("../src/images/comverse-logo-medium.png");
+    content: url("public/src/images/comverse-logo-medium.png");
   }
   input[type="text"],
   input[type="submit"] {
