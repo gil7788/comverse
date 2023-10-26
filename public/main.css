@@ -665,43 +665,37 @@ body {
   text-align: center;
 }
 
-.imagesContainer>li .solutionImage1::before,
-.imagesContainer>li .solutionImage2::before,
-.imagesContainer>li .solutionImage3::before,
-.imagesContainer>li .solutionImage4::before,
-.imagesContainer>li .solutionImage5::before,
-.imagesContainer>li .solutionImage6::before {
-  visibility: hidden;
-}
-
-.imagesContainer>li .solutionImage1::before,
-.imagesContainer>li:hover .solutionImage1 {
+.solutionImage1:hover {
   content: url('../src/images/solution_icon_biz-analitics_hover.png');
 }
 
-.imagesContainer>li .solutionImage2::before,
-.imagesContainer>li:hover .solutionImage2 {
+.solutionImage2:hover {
   content: url('../src/images/solution_icon_diti-cx_hover.png');
 }
 
-.imagesContainer>li .solutionImage3::before,
-.imagesContainer>li:hover .solutionImage3 {
+.solutionImage3:hover {
   content: url('../src/images/solution_icon_smart-money_hover.png');
 }
 
-.imagesContainer>li .solutionImage4::before,
-.imagesContainer>li:hover .solutionImage4 {
+.solutionImage4:hover {
   content: url('../src/images/solution_icon_optimize-efficnt_hover.png');
 }
 
-.imagesContainer>li .solutionImage5::before,
-.imagesContainer>li:hover .solutionImage5 {
+.solutionImage5:hover {
   content: url('../src/images/solution_icon_personal_hover.png');
 }
 
-.imagesContainer>li .solutionImage6::before,
-.imagesContainer>li:hover .solutionImage6 {
+.solutionImage6:hover {
   content: url('../src/images/solution_icon_biz-transform_hover.png');
+}
+
+.solutionImage1::before,
+.solutionImage2::before,
+.solutionImage3::before,
+.solutionImage4::before,
+.solutionImage5::before,
+.solutionImage6::before {
+  visibility: hidden;
 }
 
 .allSolutionsButton {
