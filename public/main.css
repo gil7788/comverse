@@ -1322,21 +1322,6 @@ body {
   width: 1.5em;
   height: 1.5em;
 }
-.blogIcons1:hover,
-.blogIcons1::before {
-  background-image: url('../src/images/socialMenuIcon-youtube_hover.png');
-}
-
-.blogIcons2:hover,
-.blogIcons2::before {
-  background-image: url('../src/images/socialMenuIcon-twitter_hover.png');
-}
-
-.blogIcons3:hover,
-.blogIcons3::before {
-  background-image: url('../src/images/socialMenuIcon-linkdin_hover.png');
-}
-
 .blogIcons1 {
   background-image: url('../src/images/socialMenuIcon-youtube.png');
 }
@@ -1347,6 +1332,19 @@ body {
 
 .blogIcons3 {
   background-image: url('../src/images/socialMenuIcon-linkdin.png');
+}
+
+/* Apply the hover effect for each blog icon */
+.blogIcons1:hover {
+  background-image: url('../src/images/socialMenuIcon-youtube_hover.png');
+}
+
+.blogIcons2:hover {
+  background-image: url('../src/images/socialMenuIcon-twitter_hover.png');
+}
+
+.blogIcons3:hover {
+  background-image: url('../src/images/socialMenuIcon-linkdin_hover.png');
 }
 
 .signUpContainer {
